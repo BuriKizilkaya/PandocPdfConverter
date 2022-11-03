@@ -1,0 +1,25 @@
+title: Demo Document
+date: \today
+subtitle: Dieses Dokument ist pandoc generiert worden. Der Content kommt von verschiedenen Markdown-Files
+author:
+  - Burak Kizilkaya (software architect)
+keywords: [demo, document]
+papersize: a4
+links-as-notes: true
+toc: true
+toc-depth: 2
+toc-own-page: true
+lang: en
+titlepage: true
+footer-left: Demo
+logo: konplan_logo.png
+logo-width: 200pt
+numbersections: true
+footnotes-pretty: true
+
+# Allow to use awesomebox (https://github.com/milouse/latex-awesomebox)
+header-includes:
+  - |
+    ```{=latex}
+    \usepackage{awesomebox}
+    ```
