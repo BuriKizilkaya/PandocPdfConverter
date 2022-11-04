@@ -74,6 +74,7 @@ RUN tlmgr update --self && \
     xpatch
 
 COPY --from=build-env /usr/local/bin/pandoc-plantuml /usr/local/bin/pandoc-plantuml
+COPY --from=build-env /usr/local/bin/pandoc-include /usr/local/bin/pandoc-include
 COPY --from=build-env /usr/local/lib/python3.10/dist-packages/ /usr/local/lib/python3.10/dist-packages/
 COPY --from=build-env /usr/bin/plantuml/ /usr/bin/plantuml
 COPY --from=build-env /opt/plantuml/ /opt/plantuml/
